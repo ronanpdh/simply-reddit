@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/Nav/Nav'
-import Home from './pages/Home/Home'
+import { Route, Routes } from "react-router-dom";
+import Home from './pages/Home/Home';
+import SearchResults from './pages/Search/SearchResults';
+import NotFound from './pages/Home/404/NotFound';
 
 
 function App() {
   return (
-    <div className="w-screen top-0">
-      <header className="w-full top-0">
-        <Nav />
-      </header>
-      <Home />
-    </div>
+    <Routes>
+      <Route index element={<Home />} />
+      <Route path="search" element={<SearchResults />} />
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   );
 }
 

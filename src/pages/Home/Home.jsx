@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import PostLoading from '../../components/Post/PostLoading';
-import {useSelector, useDispatch } from 'react-redux'; 
-import { fetchData } from '../../features/home/homeSlice';
+import Nav from '../../components/Nav/Nav';
 import CategorySelector from '../../components/CategorySelector/CategorySelector';
 
 function Home() {
 
     return (
         <div>
-            <CategorySelector />
+            <div className="w-screen top-0">
+                <header className="w-full top-0">
+                    <Nav />
+                </header>
+                <CategorySelector />
+            </div>
         </div>
     )
 }
