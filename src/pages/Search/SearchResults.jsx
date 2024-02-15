@@ -36,7 +36,9 @@ function SearchResults() {
             <header className="w-full top-0">
                 <Nav />
             </header>
-            <h2>{searchTerm} Search Results</h2>
+            <div className='container p-6'>
+                <h2 className="text-lg font-semibold text-center">Search Results for: {searchTerm}</h2>
+            </div>
             <div className="masonry sm:masonry-sm md:masonry-md auto-rows-max mt-8 gap-4 px-6">
                 {results.map((item) => (
                     <Post key={item.id} subReddit={item.data.subreddit_name_prefixed} title={item.data.title} username={item.data.author} time={item.data.time} comments={item.data.num_comments} image={item.data.url} video={item.data.is_video} videoData={item.data.media} votes={item.data.ups} link={item.data.url} />

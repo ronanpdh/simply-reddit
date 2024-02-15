@@ -6,7 +6,7 @@ function Home() {
 
     return (
         <div>
-            <div className="w-screen top-0">
+            <div className="w-screen top-0 overscroll-none">
                 <header className="w-full top-0">
                     <Nav />
                 </header>

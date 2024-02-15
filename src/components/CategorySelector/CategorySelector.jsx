@@ -12,7 +12,7 @@ function CategorySelector() {
     const error = useSelector((state) => state.category.hasError); 
 
     // Set categories for menu - change to use API once core functionality is sorted. 
-    const categories = ['all', 'popular', 'best', 'controversial', 'rising', 'gaming', 'sports', 'business'] 
+    const categories = ['all', 'popular', 'best', 'controversial', 'rising', 'gaming', 'sports', 'business', 'celebrity', 'crypto', 'television', 'art', 'fashion', 'law', 'history', 'hobbies', 'military', 'movies', 'music', 'place', 'politics', 'programming', 'science', 'technology'] 
 
     // useEffect to dispatch initial API call
     useEffect(() => {
@@ -27,10 +27,13 @@ function CategorySelector() {
 
     return(
         <>
-            <div className="container flex justify-center">
-                <div className="grid grid-flow-col-dense auto-cols-max grid-rows-1 rounded-lg gap-6 mt-4">
+            <div className="w-full flex justify-center">
+                <div className="w-full grid grid-flow-col auto-cols-max grid-rows-1 rounded-lg gap-6 mt-6 py-4 px-6 overflow-x-auto justify-items-center">
                     {categories.map((category) => 
-                        <button key={category.id} onClick={() => handleCategoryChange(category)}>{category}</button>
+                        <button className='transition ease-in-out delay-150 py-2 px-4 hover:-translate-y-1 hover:scale-110 bg-sky-100 hover:bg-sky-300 active:bg-sky-500 focus:ring focus:ring-violet-300 rounded-lg' 
+                            key={category.id} 
+                            onClick={() => handleCategoryChange(category)}>{category.charAt(0).toUpperCase() + category.slice(1)}
+                        </button>
                     )}
                 </div>
             </div>
