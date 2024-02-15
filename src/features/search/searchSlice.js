@@ -2,9 +2,9 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const fetchSearchData = createAsyncThunk(
     'search/fetchSearchData',
-    async (searchInput) => {
+    async (searchTerm) => {
         try {
-            const response = await fetch(`https://www.reddit.com/search.json?q=${searchInput}`);
+            const response = await fetch(`https://www.reddit.com/search.json?q=${searchTerm}`);
             if (!response.ok) {
                 throw new Error("Network response failed")
             }
@@ -19,11 +19,16 @@ export const fetchSearchData = createAsyncThunk(
 export const searchSlice = createSlice({
     name: 'search',
     initialState: {
+        searchTerm: '',
         results: [],
         loading: false,
         hasError: false
     },
-    reducers: {},
+    reducers: {
+        setSearchTerm(state, action) {
+            state.searchTerm = action.payload
+        }
+    },
     extraReducers: (builder) => {
         builder.addCase(fetchSearchData.pending, (state) => {
             state.loading = true;
@@ -40,5 +45,7 @@ export const searchSlice = createSlice({
         })
     }   
 });
+
+export const { setSearchTerm } = searchSlice.actions;
 
 export default searchSlice.reducer; 

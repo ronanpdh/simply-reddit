@@ -10,7 +10,7 @@ function App() {
   return (
     <Routes>
       <Route index element={<Home />} />
-      <Route path="search" element={<SearchResults />} />
+      <Route path="search-results" element={<SearchResults />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
