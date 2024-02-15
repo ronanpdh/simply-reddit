@@ -19,7 +19,7 @@ export const fetchPostByCategory = createAsyncThunk (
 export const categorySlice = createSlice({
     name: "category",
     initialState: {
-        selectedCategory: 'popular',
+        selectedCategory: 'all',
         posts: [],
         loading: false, 
         hasError: false
