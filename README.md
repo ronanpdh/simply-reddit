@@ -27,8 +27,8 @@ We all love reddit but boy is it easy to get lost in, doom scrolling seems like 
 - Redux
 - Tailwind
 - Reddit JSON API
-- Testing
-  - Jest & Enzyme
+- Jest & Enzyme
+- Figma 
 
 
 ---
