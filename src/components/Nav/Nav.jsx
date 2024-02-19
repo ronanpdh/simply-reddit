@@ -7,10 +7,10 @@ import Search from "../Search/Search";
 function Nav() {
 
     return (
-        <div className="inline-flex items-center justify-between bg-red-500	w-full p-8 top-0">
-            <Link to={'/'}><img className="size-16" src={logo} alt="reddit logo"></img></Link>
-            <h1 className="font-sans font-bold text-2xl text-white ">Simply Reddit</h1>
-            <div className="inline-flex w-1/6">
+        <div className="flex flex-col items-center justify-between bg-red-500 dark:bg-slate-800 w-full p-8 top-0 sm:flex-row">
+            <h1 className="font-sans font-bold text-2xl text-white italic">Simply Reddit</h1>
+            <Link to={'/'} className="hidden md:flex"><img className="size-16 sm:invisible md:visible " src={logo} alt="reddit logo"></img></Link>
+            <div className="inline-flex mt-4 ">
                 <Search />
             </div>
         </div>

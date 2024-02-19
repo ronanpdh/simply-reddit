@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Nav from '../../components/Nav/Nav';
-import Post from '../../components/Post/Post';
-import PostLoading from '../../components/Post/PostLoading';
+import Post from '../../components/PostCards/Post';
+import PostLoading from '../../components/PostCards/PostLoading';
 import { useSelector } from 'react-redux';
 
 function SearchResults() {

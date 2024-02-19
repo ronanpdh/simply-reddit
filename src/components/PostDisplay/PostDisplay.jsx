@@ -1,6 +1,6 @@
 import React from 'react';
-import Post from '../Post/Post';
-import PostLoading from '../Post/PostLoading';
+import Post from '../PostCards/Post';
+import PostLoading from '../PostCards/PostLoading';
 
 function PostDisplay({ posts, loading, error }) {
 
@@ -23,7 +23,6 @@ function PostDisplay({ posts, loading, error }) {
             </div>
         )
     }
-
 
 
     return (

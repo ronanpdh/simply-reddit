@@ -5,7 +5,7 @@ import CategorySelector from '../../components/CategorySelector/CategorySelector
 function Home() {
 
     return (
-        <div>
+        <div className="dark:bg-slate-900 bg-slate-100">
             <div className="w-screen top-0 overscroll-none">
                 <header className="w-full top-0">
                     <Nav />

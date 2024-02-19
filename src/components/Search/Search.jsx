@@ -5,13 +5,13 @@ import { useNavigate } from 'react-router-dom';
 
 function Search() {
     const dispatch = useDispatch();
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
     const searchTerm = useSelector((state) => state.search.searchTerm)
 
     // Handle search input submit. checl the seach term isn't empty. dispatch the search term and call api in searchSlice then navigate to search results page
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!searchTerm.trim()) return; 
+        if (!searchTerm.trim()) return;
         dispatch(fetchSearchData(searchTerm));
         navigate('/search-results')
     }
@@ -24,14 +24,21 @@ function Search() {
 
     return (
         <>
-            <form onSubmit={handleSubmit}>
-                <input class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm" 
-                    placeholder="Search for anything..." 
-                    type="text" 
-                    name="search" 
-                    value={searchTerm}
-                    onChange={handleInputChange}/>
-            </form>
+            <div class="relative flex content-center" >
+                <form onSubmit={handleSubmit}>
+                    <div class="absolute flex content-center">
+                        <svg class="absolute text-slate-400 h-5 w-5 my-2 mx-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <input class="placeholder:italic placeholder:text-slate-400 flex shrink-0 bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                        placeholder="Search..."
+                        type="text"
+                        name="search"
+                        value={searchTerm}
+                        onChange={handleInputChange} />
+                </form>
+            </div>
         </>
     )
 };
