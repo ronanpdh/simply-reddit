@@ -1,6 +1,54 @@
-# Getting Started with Create React App and Redux
+# Simply Reddit
+
+**What?** 
+A simple Reddit client to get an overview of the top posts from various topics without any auth flow or things to slow you down.
+
+**Why?** 
+We all love reddit but boy is it easy to get lost in, doom scrolling seems like a feature... Sometimes it's great to be able to dip into reddit, read some posts without getting too caught up and dip out again. You get to keep up with the never ending trends and stories without the attention stealing!
+
+## Features
+**Currently you can:**
+- Select topics from predefined categories
+- Search for topics based on user input
+- Dark and Light Mode
+- Navigate to the post on reddit
+- See upvotes, who posted and how many comments each page has]
+- Fully Responsive
+
+**Coming Soon**
+  - [] View post details and comments rather than navigating off Simply Reddit
+  - [] Comment on posts from the app
+  - [] Create Dashboards for accessings favoruite topics quickly
+
+
+
+## Tech Stack
+- React
+- Redux
+- Tailwind
+- Reddit JSON API
+- Testing
+  - Jest & Enzyme
+
+
+---
+### Wireframes
+
+
+![Simply Reddit Home](https://github.com/ronanpdh/simply-reddit/assets/97302667/baea09c7-afd5-4979-90ff-5069f13cd1d9)
+![Simply Reddit Post](https://github.com/ronanpdh/simply-reddit/assets/97302667/961e26f4-6957-49f6-9214-123ec80704bf)
+![Simply Reddit Mobile](https://github.com/ronanpdh/simply-reddit/assets/97302667/ceb8c2df-b89b-4730-af97-f5e708a91885)
+
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+
+
+
+
+---
+# Getting Started with Create React App and Redux
 
 ## Available Scripts
 
