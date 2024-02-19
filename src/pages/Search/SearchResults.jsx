@@ -32,12 +32,12 @@ function SearchResults() {
     }
 
     return (
-        <div className="w-screen top-0">
+        <div className="w-screen top-0 dark:bg-slate-900">
             <header className="w-full top-0">
                 <Nav />
             </header>
             <div className='container p-6'>
-                <h2 className="text-lg font-semibold text-center">Search Results for: {searchTerm}</h2>
+                <h2 className="text-xl font-semibold italic text-left dark:text-white mt-4">Search Results for: {searchTerm}</h2>
             </div>
             <div className="masonry sm:masonry-sm md:masonry-md auto-rows-max mt-8 gap-4 px-6">
                 {results.map((item) => (
