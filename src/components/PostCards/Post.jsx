@@ -21,7 +21,7 @@ function Post(props) {
         <div className="bg-slate-300 dark:bg-slate-300  p-2 m-4 w-fit h-fit mx-auto rounded-lg shadow-md overflow-hidden">
             <a href={props.link} target="_blank" rel="noreferrer">
                 <div className="bg-white dark:bg-slate-800 dark:text-white px-2 py-6 grid-rows-2 items-start">
-                    <a href={`https://www.reddit.com/${props.subReddit}`} target="_blank" rel="noreferrer"><h4>{props.subReddit}</h4></a>
+                    <a href={`https://www.reddit.com/${props.subReddit}`} target="_blank" rel="noreferrer"><h4 className="font-semibold" >{props.subReddit}</h4></a>
                     <h2 className="text-lg mt-4">{props.title}</h2>
                     <div className="col-auto flex items-center justify-end">
                         <p className="text sm:text-sm dark:text-white">{props.time}</p>
