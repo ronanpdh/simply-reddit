@@ -24,14 +24,14 @@ function Search() {
 
     return (
         <>
-            <div class="relative flex content-center" >
+            <div className="relative flex content-center" >
                 <form onSubmit={handleSubmit}>
-                    <div class="absolute flex content-center">
-                        <svg class="absolute text-slate-400 h-5 w-5 my-2 mx-2" viewBox="0 0 20 20" fill="currentColor">
-                            <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                    <div className="absolute flex content-center">
+                        <svg className="absolute text-slate-400 h-5 w-5 my-2 mx-2" viewBox="0 0 20 20" fill="currentColor">
+                            <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
                         </svg>
                     </div>
-                    <input class="placeholder:italic placeholder:text-slate-400 flex shrink-0 bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                    <input className="placeholder:italic placeholder:text-slate-400 flex shrink-0 bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
                         placeholder="Search..."
                         type="text"
                         name="search"

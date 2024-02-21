@@ -3,7 +3,7 @@ import './App.css';
 import { Route, Routes } from "react-router-dom";
 import Home from './pages/Home/Home';
 import SearchResults from './pages/Search/SearchResults';
-import NotFound from './pages/Not Found/NotFound';
+import NotFound from './pages/NotFound/NotFound';
 
 
 function App() {
