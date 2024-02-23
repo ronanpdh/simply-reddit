@@ -1,5 +1,9 @@
 # Simply Reddit
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f5238b8c-ffd5-4991-ad76-9cb17b163d37/deploy-status)](https://app.netlify.com/sites/simplyreddit/deploys)
+
+Check out the app here - **simplyreddit.netlify.app**
+
 **What?** 
 A simple Reddit client to get an overview of the top posts from various topics without any auth flow or things to slow you down.
 
