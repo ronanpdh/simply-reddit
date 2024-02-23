@@ -3,6 +3,9 @@
 ## Status
 <img alt="Netlify" src="https://img.shields.io/netlify/f5238b8c-ffd5-4991-ad76-9cb17b163d37?style=for-the-badge">
 
+![Uptime Robot status](https://img.shields.io/uptimerobot/status/m796432560-61497bafd4cf7fd6495b524f?style=for-the-badge&labelColor=1E293B)
+
+
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f5238b8c-ffd5-4991-ad76-9cb17b163d37/deploy-status)](https://app.netlify.com/sites/simplyreddit/deploys)
 
