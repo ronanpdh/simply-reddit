@@ -28,7 +28,7 @@ function PostDisplay({ posts, loading, error }) {
 
     return (
         <div>
-            <div className="masonry sm:masonry-sm md:masonry-md auto-rows-max mt-8 gap-4 px-6">
+            <div className="masonry sm:masonry-sm md:masonry-md auto-rows-max mt-8 gap-6 px-4">
                 {posts.map((item) => (
                     <Post key={item.data.id} subReddit={item.data.subreddit_name_prefixed} title={item.data.title} username={item.data.author} time={item.data.time} comments={item.data.num_comments} image={item.data.url} video={item.data.is_video} videoData={item.data.media} votes={item.data.ups} link={item.data.url} />
                 ))}
